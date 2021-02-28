@@ -42,14 +42,14 @@ Added saveFile
 Added save
 Added #include <limits>
 Removed #include <limits>
+Removed saveFile
+Removed save
 
 */
 
 int input;
 int verifiedInput;
 const int randNum = rand();
-ifstream saveFile;
-ofstream save;
 
 void check() {
     if (input > 1 && input < randNum + 1) {
