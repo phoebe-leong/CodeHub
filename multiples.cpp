@@ -69,7 +69,8 @@ void intro() {
     std::cout << "\n";
     std::cout << "--Started by Phoebe Leong on 26 / 2 / 2021 at 7:24pm in Sydney, Australia using Visual Studio Code v1.53.2 for MacOS Catalina v10.15.7--\n";
     std::cout << "--Finished by Phoebe Leong on 28 / 2 / 2021 at 11:13am in Sydney, Australia using Visual Studio Code v1.53.2 for MacOS Catalina v10.15.7--\n";
-    std::cout << "--Originally tested using iTerm v3.4.4 for MacOS Catalina v10.15.7--\n\n";  
+    std::cout << "--Originally tested using iTerm v3.4.4 for MacOS Catalina v10.15.7--\n";
+    std::cout << "https://github.com/darius-leong/multiples\n\n";  
 
     std::cout << "This is a simple C++ program which takes user input and then prints out the number and its multiple until the user-inputted number is reached.\n\n";
 }
