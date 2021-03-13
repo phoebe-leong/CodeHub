@@ -9,7 +9,6 @@
  */
 
 #include <iostream>
-#include <fstream>
 #include <unistd.h>
 #include <stdio.h>  
 #include <stdlib.h>
@@ -19,7 +18,6 @@ using namespace std;
 
 int input;
 int verifiedInput;
-ofstream file;
 const int num = 50;
 
 
@@ -37,46 +35,28 @@ int close () {
 // Operators
 
 void multiplication() {
-    file.open("output.txt");
-
     for (int i = 0; i < verifiedInput; i++) {
         int j = i * i;
         cout << i << " " << j;
-        file << i << " " << j;
         cout << "\n";
-        file << "\n";
     }
-
-    file.close();
 }
 
 void addition() {
-    file.open("output.txt");
-
     for (int i = 0; i < verifiedInput; i++) {
         int j = i + i;
         cout << i << " " << j;
-        file << i << " " << j;
         cout << "\n";
-        file << "\n";
     }
-
-    file.close();
 }
 
 void subtraction() {
-    file.open("output.txt");
-
     for (int i = 0; i < verifiedInput; i++) {
         int j = i;
         j -= 1;
         cout << i << " " << j;
-        file << i << " " << j;
         cout << "\n";
-        file << "\n";
     }
-
-    file.close();
 }
 
 void operatorCheck() {
@@ -111,7 +91,7 @@ void intro() {
     cout << "\n";
     cout << "https://github.com/phoebe-leong/multiples\n\n";  
 
-    std::cout << "This is a simple C++ program which takes user input and then prints out the number and its multiple until the user-inputted number is reached.\n\n";
+    cout << "This is a simple C++ program which takes user input and then prints out the number and its multiple until the user-inputted number is reached.\n\n";
 }
 
 void numbers() {
