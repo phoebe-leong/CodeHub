@@ -3,23 +3,20 @@
  * @file multiples.cpp
  * @author PH03be (phoebeleong8@gmail.com)
  * @brief A simple C++ program which takes user input and then prints out the number and its multiple until the user-inputted number is reached.
- * @version 0.2
+ * @version 0.3
  * @date 12-03-21
  * @copyright Copyright (c) 2021
  */
 
 #include <iostream>
-#include <unistd.h>
 #include <stdio.h>  
-#include <stdlib.h>
-#include <cmath>
+#include <string>
 #include "multiples.h"
 using namespace std;
 
 int input;
 int verifiedInput;
 const int num = 50;
-
 
 // Universal close function to exit the program
 
