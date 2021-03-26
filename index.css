@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'Azonix';
+    src: "Azonix.otf" format(".otf");
+}
+
+html {
+    font-family: 'Azonix', sans-serif;
+}
+
+#btn {
+    font-family: 'Azonix', sans-serif;
+    float: right;
+    border: none;
+}
