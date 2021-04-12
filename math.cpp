@@ -19,7 +19,6 @@ void subtraction();
 void modulo();
 void operatorCheck();
 void check();
-void intro();
 void numberInput();
 
 // Universal close function/s to exit the program
@@ -105,11 +104,6 @@ void check() {
     }
 }
 
-void intro() {
-    cout << "\n";  
-    cout << "This is a simple C++ program which takes user input and then prints out the number and the answer to the selected equation until the user-inputted number is reached.\n\n";
-}
-
 void numberInput() {
 
     cout << "Give a number between 1 and " << num << ":\n";
@@ -121,7 +115,6 @@ void numberInput() {
 }
 
 int main () {
-    intro();
     numberInput();
     close();
 }
