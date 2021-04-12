@@ -17,9 +17,9 @@ It then takes that operator and then number and divides itself by itself.
 
 For example:
 
-1 / 1 = 1
-1 - 1 = 0
-1 + 1 = 2
-1 * 1 = 1
+1 / 1 = 1  
+1 - 1 = 0  
+1 + 1 = 2  
+1 * 1 = 1  
 
 The program takes the number and the operator and manipulates itself by itself.
