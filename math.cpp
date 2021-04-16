@@ -5,7 +5,7 @@ using namespace std;
 
 // variable declarations
 
-int input;  
+int input = 0;  
 double verifiedInput;
 const int num = 50;
 
