@@ -9,6 +9,7 @@ The text analysis program asks for a word, and then presents you with three opti
 - Length of the word
 - Amount of consonants in the word
 - Amount of vowels in the word
+- Concatenation
 
 ### Calculation
 
