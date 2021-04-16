@@ -13,7 +13,7 @@ The text analysis program asks for a word, and then presents you with three opti
 
 ### Calculation
 
-The calculation program asks for a number, and then asks you what operator you would like to use (divide, add, subtract, multiply).
+The calculation program asks for a number, and then asks you what operator you would like to use (divide (modulo), add, subtract, multiply).
 It then takes that operator and then number and divides itself by itself.
 
 For example:
