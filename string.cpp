@@ -13,6 +13,7 @@ int close();
 void length();
 void vowelCount();
 void consonantCount();
+void concatenate();
 void wordInput();
 void wordCheck();
 
@@ -195,6 +196,28 @@ void consonantCount() {
     close();
 }
 
+void concatenate() {
+
+    // variable declarations
+
+    string word2;
+    string spaceInBetweenWords;
+
+    cout << "Enter the word that you want to add on to " << word << ":\n";
+    cin >> word2;
+    cout << "Do you want a space in between the words? [y/n]\n";
+    cin >> spaceInBetweenWords;
+    cout << "\n\n";
+
+    if (spaceInBetweenWords == "y" || spaceInBetweenWords == "yes") {
+        cout << word << " " << word2;
+    } else {
+        cout << word << word2;
+    }
+
+    close();
+}
+
 void wordInput() {
     cout << "Enter your word here:\n";
     cin >> word;
@@ -204,8 +227,8 @@ void wordInput() {
 void wordCheck() {
     string input;
 
-    cout << "\n\nDo you want to find the length, the amount of vowels, or the amount of consonants in your word?\n";
-    cout << "length, vowels, or consonants\n";
+    cout << "\n\nDo you want to find the length, the amount of vowels, the amount of consonants in your word, or concatenate the inputted word with another word?\n";
+    cout << "length, vowels, consonants, concatenate\n";
     cin >> input;
 
     if (input == "length") {
@@ -214,6 +237,8 @@ void wordCheck() {
         consonantCount();
     } else if (input == "vowels") {
         vowelCount();
+    } else if (input == "concatenate") {
+        concatenate();
     } else {
         cout << "Not an input.\n\n";
         wordCheck();
