@@ -10,6 +10,7 @@ int main() {
     cout << "              Made by PH03be\n";
     cout << "        [ 0 ] for multiplication, etc\n";
     cout << "        [ 1 ] for text analysis\n";
+    cout << "        [ 2 ] for 'Capitalism In A Nutshell'\n";
     cout << "More will hopefully come in the near-ish future\n";
     cout << "================================================\n";
     cin >> input;
@@ -22,5 +23,8 @@ int main() {
         system("g++ -o string.out string.cpp");
         system("clear");
         system("./string.out");
+    } else if (input == 2) {
+        system("clear");
+        system("./main");
     }
 }
