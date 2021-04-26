@@ -1,7 +1,6 @@
 #include <iostream>
 #include <string>
 #include <math.h>
-using namespace std;
 
 // variable declarations
 
@@ -24,10 +23,10 @@ void numberInput();
 // Universal close function/s to exit the program
 
 int close () {
-    cout << "Press enter to close the program.\n";
+    std::cout << "Press enter to close the program.\n";
 
-    cin.ignore();
-    cin.get();
+    std::cin.ignore();
+    std::cin.get();
 
     system("clear");
     return 0;
@@ -38,44 +37,44 @@ int close () {
 void multiplication() {
     for (int i = 0; i <= verifiedInput; i++) {
         int j = i * i;
-        cout << i << " " << j;
-        cout << "\n";
+        std::cout << i << " " << j;
+        std::cout << "\n";
     }
 }
 
 void addition() {
     for (int i = 1; i <= verifiedInput; i++) {
         int j = i + i;
-        cout << i << " " << j;
-        cout << "\n";
+        std::cout << i << " " << j;
+        std::cout << "\n";
     }
 }
 
 void subtraction() {
     for (int i = 1; i <= verifiedInput; i++) {
         int j = i - 1;
-        cout << i << " " << j;
-        cout << "\n";
+        std::cout << i << " " << j;
+        std::cout << "\n";
     }
 }
 
 void modulo() {
     for (int i = 1; i <= verifiedInput; i++) {
         int j = i % i;
-        cout << i << " " << j;
-        cout << "\n";
+        std::cout << i << " " << j;
+        std::cout << "\n";
     }
 }
 
 // Operators - end
 
 void operatorCheck() {
-    string numUse;
+    std::string numUse;
     int numUseInt;
 
-    cout << "Do you want to add, multiply, modulo (divide the number and output the remainder), or subtract the numbers?\n";
-    cin >> numUse;
-    cout << "\n\n";
+    std::cout << "Do you want to add, multiply, modulo (divide the number and output the remainder), or subtract the numbers?\n";
+    std::cin >> numUse;
+    std::cout << "\n\n";
 
     if (numUse == "add") {
         addition();
@@ -86,7 +85,7 @@ void operatorCheck() {
     } else if (numUse == "modulo") {
         modulo();
     } else {
-        cout << "Your input is not an option.\n\n";
+        std::cout << "Your input is not an option.\n\n";
         numberInput();
     }
 }
@@ -97,7 +96,7 @@ void check() {
         verifiedInput = input;
         operatorCheck();
     } else if (input < 1 || input > num) {
-        cout << "\n\nOut of range\n\n";
+        std::cout << "\n\nOut of range\n\n";
         numberInput();
     } else {
         // need to find a way to fix this
@@ -106,8 +105,8 @@ void check() {
 
 void numberInput() {
 
-    cout << "Give a number between 1 and " << num << ":\n";
-    cin >> input;
+    std::cout << "Give a number between 1 and " << num << ":\n";
+    std::cin >> input;
 
     // Checks if the user input meets the 1 - 10 ratio
 
