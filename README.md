@@ -25,6 +25,6 @@ For example:
 
 The program takes the number and the operator and manipulates itself by itself.
 
-## Capitalism In A Nutshell
+### Capitalism In A Nutshell
 
 [phoebe-leong/Capitalism-In-A-Nutshell](https://github.com/phoebe-leong/Capitalism-In-A-Nutshell)
