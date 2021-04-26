@@ -1,10 +1,9 @@
 #include <iostream>
 #include <string>
-using namespace std;
 
 // variable declarations
 
-string word;
+std::string word;
 int consonantNum;
 
 // function declarations
@@ -20,17 +19,17 @@ void wordCheck();
 // universal close function
 
 int close () {
-    cout << "Press enter to close the program.\n";
+    std::cout << "Press enter to close the program.\n";
 
-    cin.ignore();
-    cin.get();
+    std::cin.ignore();
+    std::cin.get();
 
     system("clear");
     return 0;
 }
 
 void length() {
-    cout << "Word Length: " << word.size() + 1;
+    std::cout << "Word Length: " << word.size() + 1;
 }
 
 // finds the number of vowels in the string
@@ -38,7 +37,7 @@ void length() {
 
 void vowelCount() {
 
-    cout << "\n\n";
+    std::cout << "\n\n";
 
     // variable declarations
 
@@ -59,32 +58,32 @@ void vowelCount() {
 
     for (int i = 0; i < word.size(); i++) {
         if (word[i] == vowel1) {
-            cout << "Found an 'a'\n";
+            std::cout << "Found an 'a'\n";
             vowelNum++;
             aNum++;
         } else if (word[i] == vowel2) {
-            cout << "Found an 'e'\n";
+            std::cout << "Found an 'e'\n";
             vowelNum++; 
             eNum++;
         } else if (word[i] == vowel3) {
-            cout << "Found an 'i'\n";
+            std::cout << "Found an 'i'\n";
             vowelNum++;
             iNum++;
         } else if (word[i] == vowel4) {
-            cout << "Found an 'o'\n";
+            std::cout << "Found an 'o'\n";
             vowelNum++;
             oNum++;
         } else if (word[i] == vowel5) {
-            cout << "Found a 'u'\n";
+            std::cout << "Found a 'u'\n";
             vowelNum++;
             uNum++;
         }
     }
 
     if (vowelNum == 0) {
-        cout << "There are" << vowelNum << "vowels in your word.\n";
+        std::cout << "There are" << vowelNum << "vowels in your word.\n";
     } else {
-        cout << "There are " << vowelNum << " vowels in your word, " << aNum << " a's in your word, " << eNum << " e's in your word. " << iNum << " i's in your word, " << oNum << " o's in your word, and" << uNum << " u's in your word.\n";
+        std::cout << "There are " << vowelNum << " vowels in your word, " << aNum << " a's in your word, " << eNum << " e's in your word. " << iNum << " i's in your word, " << oNum << " o's in your word, and" << uNum << " u's in your word.\n";
     }
 
     close();
@@ -125,73 +124,73 @@ void consonantCount() {
         // apparently switch statements dont work with char variables..?
 
         if (word[i] == consonant1) {
-            cout << "Found a 'b'\n";
+            std::cout << "Found a 'b'\n";
             consonantNum++;
         } else if (word[i] == consonant2) {
-            cout << "Found a 'c'\n";
+            std::cout << "Found a 'c'\n";
             consonantNum++;
         } else if (word[i] == consonant3) {
-            cout << "Found a 'd'\n";
+            std::cout << "Found a 'd'\n";
             consonantNum++;
         } else if (word[i] == consonant4) {
-            cout << "Found an 'f'\n";
+            std::cout << "Found an 'f'\n";
             consonantNum++;
         } else if (word[i] == consonant5) {
-            cout << "Found a 'g'\n";
+            std::cout << "Found a 'g'\n";
             consonantNum++;
         } else if (word[i] == consonant6) {
-            cout << "Found a 'h'\n";
+            std::cout << "Found a 'h'\n";
             consonantNum++;
         } else if (word[i] == consonant7) {
-            cout << "Found a 'j'\n";
+            std::cout << "Found a 'j'\n";
             consonantNum++;
         } else if (word[i] == consonant8) {
-            cout << "Found a 'k'\n";
+            std::cout << "Found a 'k'\n";
             consonantNum++;
         } else if (word[i] == consonant9) {
-            cout << "Found an 'l'\n";
+            std::cout << "Found an 'l'\n";
             consonantNum++;
         } else if (word[i] == consonant10) {
-            cout << "Found an 'm'\n";
+            std::cout << "Found an 'm'\n";
             consonantNum++;
         } else if (word[i] == consonant11) {
-            cout << "Found an 'n'\n";
+            std::cout << "Found an 'n'\n";
             consonantNum++;
         } else if (word[i] == consonant12) {
-            cout << "Found a 'p'\n";
+            std::cout << "Found a 'p'\n";
             consonantNum++;
         } else if (word[i] == consonant13) {
-            cout << "Found a 'q'\n";
+            std::cout << "Found a 'q'\n";
             consonantNum++;
         } else if (word[i] == consonant14) {
-            cout << "Found an 'r'\n";
+            std::cout << "Found an 'r'\n";
             consonantNum++;
         } else if (word[i] == consonant15) {
-            cout << "Found an 's'\n";
+            std::cout << "Found an 's'\n";
             consonantNum++;
         } else if (word[i] == consonant16) {
-            cout << "Found a 't'\n";
+            std::cout << "Found a 't'\n";
             consonantNum++;
         } else if (word[i] == consonant17) {
-            cout << "Found a 'v'\n";
+            std::cout << "Found a 'v'\n";
             consonantNum++;
         } else if (word[i] == consonant18) {
-            cout << "Found a 'w'\n";
+            std::cout << "Found a 'w'\n";
             consonantNum++;
         } else if (word[i] == consonant19) {
-            cout << "Found an 'x'\n";
+            std::cout << "Found an 'x'\n";
             consonantNum++;
         } else if (word[i] == consonant20) {
-            cout << "Found a 'y'\n";
+            std::cout << "Found a 'y'\n";
             consonantNum++;
         } else if (word[i] == consonant21) {
-            cout << "Found a 'z'\n";
+            std::cout << "Found a 'z'\n";
             consonantNum++;
         }
 
     }
 
-    cout << "There are " << consonantNum << " consonants in your word.\n";
+    std::cout << "There are " << consonantNum << " consonants in your word.\n";
 
     close();
 }
@@ -200,36 +199,36 @@ void concatenate() {
 
     // variable declarations
 
-    string word2;
-    string spaceInBetweenWords;
+    std::string word2;
+    std::string spaceInBetweenWords;
 
-    cout << "Enter the word that you want to add on to " << word << ":\n";
-    cin >> word2;
-    cout << "Do you want a space in between the words? [y/n]\n";
-    cin >> spaceInBetweenWords;
-    cout << "\n\n";
+    std::cout << "Enter the word that you want to add on to " << word << ":\n";
+    std::cin >> word2;
+    std::cout << "Do you want a space in between the words? [y/n]\n";
+    std::cin >> spaceInBetweenWords;
+    std::cout << "\n\n";
 
     if (spaceInBetweenWords == "y" || spaceInBetweenWords == "yes") {
-        cout << word << " " << word2;
+        std::cout << word << " " << word2;
     } else {
-        cout << word << word2;
+        std::cout << word << word2;
     }
 
     close();
 }
 
 void wordInput() {
-    cout << "Enter your word here:\n";
-    cin >> word;
+    std::cout << "Enter your word here:\n";
+    std::cin >> word;
     wordCheck();
 }
 
 void wordCheck() {
-    string input;
+    std::string input;
 
-    cout << "\n\nDo you want to find the length, the amount of vowels, the amount of consonants in your word, or concatenate the inputted word with another word?\n";
-    cout << "length, vowels, consonants, concatenate\n";
-    cin >> input;
+    std::cout << "\n\nDo you want to find the length, the amount of vowels, the amount of consonants in your word, or concatenate the inputted word with another word?\n";
+    std::cout << "length, vowels, consonants, concatenate\n";
+    std::cin >> input;
 
     if (input == "length") {
         length();
@@ -240,7 +239,7 @@ void wordCheck() {
     } else if (input == "concatenate") {
         concatenate();
     } else {
-        cout << "Not an input.\n\n";
+        std::cout << "Not an input.\n\n";
         wordCheck();
     }
 }
