@@ -28,3 +28,7 @@ The program takes the number and the operator and manipulates itself by itself.
 ### Capitalism In A Nutshell
 
 [phoebe-leong/Capitalism-In-A-Nutshell](https://github.com/phoebe-leong/Capitalism-In-A-Nutshell)
+
+### Anime Character Generator
+
+[phoebe-leong/anime-character-generator](https://github.com/phoebe-leong/anime-character-generator)
