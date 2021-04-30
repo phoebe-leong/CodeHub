@@ -1,7 +1,5 @@
 # CodeHub
 
-The program allows you to choose between text analysis and calculation.
-
 ### Text Analysis
 
 The text analysis program asks for a word, and then presents you with three options:
