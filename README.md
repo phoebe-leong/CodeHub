@@ -30,3 +30,7 @@ The program takes the number and the operator and manipulates itself by itself.
 ### Anime Character Generator
 
 [phoebe-leong/anime-character-generator](https://github.com/phoebe-leong/anime-character-generator)
+
+### Rocks, paper, scissors
+
+[phoebe-leong/rocks-paper-scissors](https://github.com/phoebe-leong/CodeHub/releases/tag/4.0)
