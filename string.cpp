@@ -9,10 +9,12 @@ int consonantNum;
 // function declarations
 
 int close();
+int otherClose();
 void length();
 void vowelCount();
 void consonantCount();
 void concatenate();
+void camelCaseChecker();
 void wordInput();
 void wordCheck();
 
@@ -24,6 +26,14 @@ int close () {
     std::cin.ignore();
     std::cin.get();
 
+    system("clear");
+    return 0;
+}
+
+int otherClose() {
+    std::cout << "Press enter to close the program.\n";
+
+    std::cin.get();
     system("clear");
     return 0;
 }
@@ -217,6 +227,45 @@ void concatenate() {
     close();
 }
 
+void camelCaseChecker() {
+    int UppercaseLetters = 0; 
+    int LowercaseLetters = 0;
+
+    bool isCamelCase;
+
+    for (int i; i < word.size(); i++) {
+        if (word[i] == word[0]) {
+            continue;
+        } else {
+            if (isupper(word[i]) == true) {
+                UppercaseLetters++;
+            } else {
+                LowercaseLetters++;
+            }
+        }
+    }
+
+    if (isupper(word[0]) == false && LowercaseLetters > UppercaseLetters && UppercaseLetters >= 2) {
+        isCamelCase = true;
+    } else {
+        isCamelCase = false;
+    }
+
+    if (isCamelCase == true) {
+        std::cout << "Your word is camelCase!\n";
+        std::cin.ignore();
+        std::cin.get();
+        system("clear");
+        otherClose();
+    } else {
+        std::cout << "Your word is not camelCase.\n";
+        std::cin.ignore();
+        std::cin.get();
+        system("clear");
+        otherClose();
+    }
+}
+
 void wordInput() {
     std::cout << "Enter your word here:\n";
     std::cin >> word;
@@ -226,20 +275,31 @@ void wordInput() {
 void wordCheck() {
     std::string input;
 
-    std::cout << "\n\nDo you want to find the length, the amount of vowels, the amount of consonants in your word, or concatenate the inputted word with another word?\n";
-    std::cout << "length, vowels, consonants, concatenate\n";
+    std::cout << "\n\nDo you want to find the length, the amount of vowels, the amount of consonants in your word, concatenate the inputted word with another word, or whether your word is camelCase?\n";
+    std::cout << "length, vowels, consonants, concatenate, camelcase\n";
     std::cin >> input;
 
     if (input == "length") {
+        system("clear");
         length();
     } else if (input == "consonants") {
+        system("clear");
         consonantCount();
     } else if (input == "vowels") {
+        system("clear");
         vowelCount();
     } else if (input == "concatenate") {
+        system("clear");
         concatenate();
+    } else if (input == "camelcase") {
+        system("clear");
+        camelCaseChecker();
     } else {
+        system("clear");
         std::cout << "Not an input.\n\n";
+        std::cin.ignore();
+        std::cin.get();
+        system("clear");
         wordCheck();
     }
 }
