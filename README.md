@@ -35,3 +35,11 @@ The program takes the number and the operator and manipulates itself by itself.
 ### Rocks, paper, scissors
 
 [phoebe-leong/rocks-paper-scissors](https://github.com/phoebe-leong/CodeHub/releases/tag/4.0)
+
+## How to run the program
+
+1. Download the latest stable version of CodeHub
+2. Go to the file's/s' directory and unzip it if the release is a zip file.
+3. Open a new Terminal / Command Prompt window in the directory
+4. type `./menu.out` into the window
+5. The program should now run
