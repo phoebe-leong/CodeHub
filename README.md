@@ -8,6 +8,7 @@ The text analysis program asks for a word, and then presents you with three opti
 - Amount of consonants in the word
 - Amount of vowels in the word
 - Concatenation
+- Whether the inputted string is camelCase or not
 
 ### Calculation
 
