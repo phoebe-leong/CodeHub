@@ -11,8 +11,8 @@ const int num = 50;
 // function declarations
 
 int close();
-int forceClose();
 void multiplication();
+void square();
 void addition();
 void subtraction();
 void modulo();
@@ -23,9 +23,9 @@ void numberInput();
 // Universal close function/s to exit the program
 
 int close () {
+    system("clear");
     std::cout << "Press enter to close the program.\n";
 
-    std::cin.ignore();
     std::cin.get();
 
     system("clear");
@@ -35,44 +35,69 @@ int close () {
 // Operators
 
 void multiplication() {
+    system("clear");
     for (int i = 0; i <= verifiedInput; i++) {
         int j = i * i;
         std::cout << i << " " << j;
         std::cout << "\n";
     }
+
+    std::cin.ignore();
+    std::cin.get();
+}
+
+void square() {
+    system("clear");
+    std::cout << "The square of " << verifiedInput << " is " << verifiedInput * verifiedInput << "\n";
+
+    std::cin.ignore();
+    std::cin.get();
 }
 
 void addition() {
+    system("clear");
     for (int i = 1; i <= verifiedInput; i++) {
         int j = i + i;
         std::cout << i << " " << j;
         std::cout << "\n";
     }
+
+    std::cin.ignore();
+    std::cin.get();
 }
 
 void subtraction() {
+    system("clear");
     for (int i = 1; i <= verifiedInput; i++) {
         int j = i - 1;
         std::cout << i << " " << j;
         std::cout << "\n";
     }
+
+    std::cin.ignore();
+    std::cin.get();
 }
 
 void modulo() {
+    system("clear");
     for (int i = 1; i <= verifiedInput; i++) {
         int j = i % i;
         std::cout << i << " " << j;
         std::cout << "\n";
     }
+
+    std::cin.ignore();
+    std::cin.get();
 }
 
 // Operators - end
 
 void operatorCheck() {
+    system("clear");
     std::string numUse;
     int numUseInt;
 
-    std::cout << "Do you want to add, multiply, modulo (divide the number and output the remainder), or subtract the numbers?\n";
+    std::cout << "Do you want to add, multiply, modulo (divide the number and output the remainder), find the square of your number, or subtract the numbers?\n";
     std::cin >> numUse;
     std::cout << "\n\n";
 
@@ -84,6 +109,8 @@ void operatorCheck() {
         subtraction();
     } else if (numUse == "modulo") {
         modulo();
+    } else if (numUse == "square") {
+        square();
     } else {
         std::cout << "Your input is not an option.\n\n";
         numberInput();
@@ -96,10 +123,10 @@ void check() {
         verifiedInput = input;
         operatorCheck();
     } else if (input < 1 || input > num) {
-        std::cout << "\n\nOut of range\n\n";
+        std::cout << "\n\nOut of range\n";
+
+        std::cin.get();
         numberInput();
-    } else {
-        // need to find a way to fix this
     }
 }
 
