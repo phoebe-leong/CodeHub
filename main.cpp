@@ -38,7 +38,8 @@ int main() {
         system("./rockpaperscissors.out");
     } else if (input == "6") {
         system("clear");
-        return 0;
+        system("chmod +x exit.sh");
+        system("./exit.sh");
     } else {
         system("clear");
         std::cout << "Not an input. Select one of the options from the main menu.\n";
