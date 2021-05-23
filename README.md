@@ -41,5 +41,9 @@ The program takes the number and the operator and manipulates itself by itself.
 1. Download the latest stable version of CodeHub.
 2. Go to the file's/s' directory and unzip it if the release is a zip file.
 3. Open a new Terminal / Command Prompt window in the directory.
-4. type `./menu.out` into the window and press enter.
+4. type `./run.sh` into the window and press enter.
 5. The program should now run.
+
+### First-time run
+
+If this is your first time running the program, you will need to type `chmod +x run.sh` into the window beforehand to allow the file to be run.
