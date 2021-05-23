@@ -46,4 +46,4 @@ The program takes the number and the operator and manipulates itself by itself.
 
 ### First-time run
 
-If this is your first time running the program, you will need to type `chmod +x run.sh` into the window beforehand to allow the file to be run.
+If this is your first time running the program, you will need to enter `chmod +x run.sh` into the window beforehand to allow the file to be run.
