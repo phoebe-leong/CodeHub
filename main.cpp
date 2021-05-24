@@ -4,9 +4,9 @@ int main() {
     std::string input;
 
     system("clear");
-
     std::cout << "================================================\n";
-    std::cout << "              Made by PH03be\n";
+    std::cout << "                   CodeHub\n";
+    std::cout << "                Made by PH03be\n";
     std::cout << "        [ 1 ] for multiplication, etc\n";
     std::cout << "        [ 2 ] for text analysis\n";
     std::cout << "        [ 3 ] for 'Capitalism In A Nutshell'\n";
