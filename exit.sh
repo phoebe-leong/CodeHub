@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Mostly the same as run.sh but it then exits the program with code 0
+
 if [ -f string.out ]
 then
     rm string.out 
@@ -20,14 +22,15 @@ then
     rm a.out
 fi
 
-if [ -f CIAN.out ]
-then
-    rm CIAN.out
-fi
-
 if [ -f rockpaperscissors.out ]
 then
     rm rockpaperscissors.out
 fi
 
+if [ -f anime.out ]
+then
+    rm anime.out
+fi
+
+clear
 exit 0;
