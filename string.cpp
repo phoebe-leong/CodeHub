@@ -8,7 +8,7 @@ int consonantNum;
 
 // function declarations
 
-int close();
+void close();
 int otherClose();
 void length();
 void vowelCount();
@@ -20,22 +20,14 @@ void wordCheck();
 
 // universal close function
 
-int close () {
-    std::cout << "Press enter to close the program.\n";
+void close () {
+    std::cout << "Press enter to go back to the main menu of the program.\n";
 
     std::cin.ignore();
     std::cin.get();
 
     system("clear");
-    return 0;
-}
-
-int otherClose() {
-    std::cout << "Press enter to close the program.\n";
-
-    std::cin.get();
-    system("clear");
-    return 0;
+    system("./menu.out");
 }
 
 void length() {
@@ -93,7 +85,7 @@ void vowelCount() {
     if (vowelNum == 0) {
         std::cout << "There are" << vowelNum << "vowels in your word.\n";
     } else {
-        std::cout << "There are " << vowelNum << " vowels in your word, " << aNum << " a's in your word, " << eNum << " e's in your word. " << iNum << " i's in your word, " << oNum << " o's in your word, and" << uNum << " u's in your word.\n";
+        std::cout << "There are " << vowelNum << " vowels in your word, " << aNum << " a's in your word, " << eNum << " e's in your word. " << iNum << " i's in your word, " << oNum << " o's in your word, and " << uNum << " u's in your word.\n";
     }
 
     close();
