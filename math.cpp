@@ -24,12 +24,12 @@ void numberInput();
 
 int close () {
     system("clear");
-    std::cout << "Press enter to close the program.\n";
+    std::cout << "Press enter to go back to the main menu of the program.\n";
 
     std::cin.get();
 
     system("clear");
-    return 0;
+    system("./menu.out");
 }
 
 // Operators
