@@ -201,21 +201,23 @@ void concatenate() {
 
     // variable declarations
 
-    std::string word2;
-    std::string spaceInBetweenWords;
+    std::string words[102] = {word};
+    int wordnum;
 
-    std::cout << "Enter the word that you want to add on to " << word << ":\n";
-    std::cin >> word2;
-    std::cout << "Do you want a space in between the words? [y/n]\n";
-    std::cin >> spaceInBetweenWords;
-    std::cout << "\n\n";
+    std::cout << "How many words would you like to add onto '" << word << "'? (max is 100)\n";
+    std::cin >> wordnum;
 
-    if (spaceInBetweenWords == "y" || spaceInBetweenWords == "yes") {
-        std::cout << word << " " << word2;
-    } else {
-        std::cout << word << word2;
+    std::string sentence = word + ' ';
+    system("clear");
+    for (int i = 1; i <= wordnum; i++) {
+        std::cout << "Enter a word you would like to add on:\n";
+        std::cin >> words[i];
+
+        sentence += words[i];
+        sentence += ' ';
+        system("clear");
     }
-
+    std::cout << "Your sentence is: '" << sentence << "'\n";
     close();
 }
 
